@@ -12,7 +12,7 @@ if [ ! -e ./build/bin/php ]
 then
 
     wget -qO- https://github.com/unicode-org/icu/archive/release-${ICU_VERSION}.tar.gz | tar xz
-    cd icu-icu-release-${ICU_VERSION}/icu4c/source
+    cd icu-release-${ICU_VERSION}/icu4c/source
 
     ./runConfigureICU Linux --prefix=$(pwd)/../../build
 
@@ -26,7 +26,7 @@ then
 
     ./configure --prefix=$(pwd)/../build \
         --enable-intl \
-        --with-icu-dir=$(pwd)/../icu-icu-release-${ICU_VERSION}/build \
+        --with-icu-dir=$(pwd)/../icu-release-${ICU_VERSION}/build \
         --enable-mbstring
 
     make
