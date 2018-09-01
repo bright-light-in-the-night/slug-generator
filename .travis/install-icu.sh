@@ -11,7 +11,7 @@ cd ~/php-fromsource
 if [ ! -e ./build/bin/php ]
 then
 
-    wget -qO- https://github.com/unicode-org/icu/archive/icu-release-${ICU_VERSION}.tar.gz | tar xz
+    wget -qO- https://github.com/unicode-org/icu/archive/release-${ICU_VERSION}.tar.gz | tar xz
     cd icu-icu-release-${ICU_VERSION}/icu4c/source
 
     ./runConfigureICU Linux --prefix=$(pwd)/../../build
