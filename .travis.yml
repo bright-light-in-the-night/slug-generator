@@ -16,15 +16,6 @@ env:
 
 jobs:
   include:
-    - php: 7.1
-      env: COVERAGE='--coverage-clover build/logs/clover.xml'
-    - php: 7.2
-
-    # Ignore the platform requirements for the upcoming PHP version
-    - php: nightly
-      env: COMPOSER_FLAGS='--ignore-platform-reqs'
-
-    # Test lowest ICU version
     - php: 7.2
       addons:
         apt:
