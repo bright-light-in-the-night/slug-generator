@@ -319,6 +319,7 @@ class SlugGenerator
 	 */
 	private function fixTransliteratorRule(string $rule): string
 	{
+		/*
 		static $latinAsciiFix;
 		static $deAsciiFix;
 
@@ -348,6 +349,7 @@ class SlugGenerator
 		if ($latinAsciiFix && $rule === 'Latin-ASCII') {
 			return $latinAsciiFix;
 		}
+		*/
 
 		return $rule;
 	}
