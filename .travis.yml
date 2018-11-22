@@ -48,6 +48,7 @@ install:
 script:
   - if [[ $COVERAGE ]]; then mkdir -p build/logs; fi
   - php -r '(new ReflectionExtension("intl"))->info();'
+  - php -r 'var_dump(Transliterator::create("Not-Exsits"));'
   - php vendor/bin/phpunit $COVERAGE
 
 after_script:
