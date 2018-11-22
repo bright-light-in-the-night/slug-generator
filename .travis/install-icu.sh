@@ -3,7 +3,7 @@
 set -xe
 
 ICU_VERSION="62-1"
-PHP_VERSION="7.2.9"
+PHP_VERSION="7.2.12"
 
 mkdir -p ~/php-fromsource-62
 cd ~/php-fromsource-62
