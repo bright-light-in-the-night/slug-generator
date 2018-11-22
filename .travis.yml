@@ -6,7 +6,7 @@ git:
 cache:
   directories:
     - $HOME/.composer/cache
-    - $HOME/php-fromsource
+    - $HOME/php-fromsource-62
 
 sudo: false
 
@@ -33,7 +33,7 @@ jobs:
             - pkg-config
       install:
         - .travis/install-icu.sh
-        - export PATH="$HOME/php-fromsource/build/bin/:$PATH"
+        - export PATH="$HOME/php-fromsource-62/build/bin/:$PATH"
         - composer update $COMPOSER_FLAGS --no-interaction --no-suggest
 
   allow_failures:

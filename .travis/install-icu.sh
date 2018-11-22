@@ -5,8 +5,8 @@ set -xe
 ICU_VERSION="62-1"
 PHP_VERSION="7.2.9"
 
-mkdir -p ~/php-fromsource
-cd ~/php-fromsource
+mkdir -p ~/php-fromsource-62
+cd ~/php-fromsource-62
 
 if [ ! -e ./build/bin/php ]
 then
