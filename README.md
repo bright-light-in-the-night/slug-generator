@@ -9,9 +9,9 @@ Slug Generator Library
 [![Patreon](https://img.shields.io/badge/Donate%20on-Patreon-lightgrey.svg?style=flat-square&colorB=F96854)](https://www.patreon.com/ausi)
 [![MIT License](https://img.shields.io/github/license/ausi/slug-generator.svg?style=flat-square)](https://github.com/ausi/slug-generator/blob/master/LICENSE)
 
-This library provides methods to generate slugs
-for URLs, filenames or any other target that has a limited character set.
-It’s based on PHPs Transliterator class which uses the data of the [CLDR][]
+Slug generator library provides methods to generate slugs
+for URLs, filenames, or any other target that has a limited character set.
+The library is based on PHPs Transliterator class which uses the data of the [CLDR][]
 to transform characters between different scripts (e.g. Cyrillic to Latin)
 or types (e.g. upper- to lower-case or from special characters to ASCII).
 
